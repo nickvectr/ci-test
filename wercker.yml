@@ -1,0 +1,13 @@
+box: python:2.7-slim
+
+dev:
+    steps:
+        - pip-install
+
+build:
+    steps:
+        - pip-install
+        - script:
+            name: python tests
+            code: |
+                pytest 
